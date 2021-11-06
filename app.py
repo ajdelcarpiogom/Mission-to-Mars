@@ -1,6 +1,8 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, url_for, render_template, redirect
 from flask_pymongo import PyMongo
 import scraping
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 app = Flask(__name__)
 
